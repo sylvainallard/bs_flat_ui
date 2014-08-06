@@ -146,80 +146,34 @@
           <p>
             Using flat style checkboxes requires a JS plugin which creates all the custom markup for us. Let's take a look:
           </p>
-          <label class="checkbox" for="checkbox1">
-            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
-            Checkbox
-          </label>
-          <label class="checkbox" for="checkbox2">
-            <input type="checkbox" value="" id="checkbox2" checked="checked" data-toggle="checkbox">
-            Checkbox
-          </label>
-          <label class="checkbox" for="checkbox3">
-            <input type="checkbox" value="" id="checkbox3" data-toggle="checkbox" disabled="">
-            Checkbox
-          </label>
-          <label class="checkbox" for="checkbox4">
-            <input type="checkbox" value="" id="checkbox4" checked="checked" data-toggle="checkbox" disabled="">
-            Checkbox
-          </label>
-
-          <h6 class="ptl">The Data Attributes:</h6>
-<pre class="prettyprint">
-&lt;label class="checkbox" for="checkbox1"&gt;
-  &lt;input type="checkbox" value="" id="checkbox1" data-toggle="checkbox"&gt;
-  Checkbox
-&lt;/label&gt;
-</pre>
-
-          <h6 class="ptl">Usage via JS:</h6>
-<pre class="prettyprint">
-$(':checkbox').checkbox();
-</pre>
-
-          <div class="pvm">
-            <h6>Methods:</h6>
-          </div>
-          <p class="mbl">
-            <strong>.checkbox('toggle')</strong>
-            <br/>
-            toggles the checkbox state from <span class="text-info">checked</span>
-            to <span class="text-info">unchecked</span> and back.
-          </p>
-          <p class="mbl">
-            <strong>.checkbox('check')</strong>
-            <br/>
-            sets the checkbox state to <span class="text-info">checked</span>.
-          </p>
-          <p class="mbl">
-            <strong>.checkbox('uncheck')</strong>
-            <br/>
-            sets the checkbox state to <span class="text-info">unchecked</span>.
-          </p>
-<pre class="prettyprint">
-$(':checkbox').checkbox('check');
-</pre>
-
-          <div class="pbm ptl">
-            <h6>Events:</h6>
-          </div>
-          <p class="mbl">
-            <strong>.on('toggle')</strong>
-            <br/>
-            Fired when the checkbox state changes between
-            <span class="text-info">checked</span> and
-            <span class="text-info">unchecked</span>.
-          </p>
-          <p class="mbl">
-            <strong>.on('change')</strong>
-            <br/>
-            Same as <span class="text-info">toggle</span>.
-          </p>
-<pre class="prettyprint">
-$(':checkbox').on('toggle', function() {
-  // Do something
-});
-</pre>          
           
+            <div class="row">
+                <div class="col col-md-5">
+                  <label class="control checkbox">
+                    <input type="checkbox">
+                    <span class="control-indicator"></span>
+                    Check this custom checkbox
+                  </label>
+                  <label class="control checkbox">
+                    <input type="checkbox">
+                    <span class="control-indicator"></span>
+                    Check this custom checkbox 2
+                  </label>
+                  <label class="control checkbox">
+                    <input type="checkbox">
+                    <span class="control-indicator"></span>
+                    Check this custom checkbox 3
+                  </label>
+                  <label class="control checkbox">
+                    <input type="checkbox">
+                    <span class="control-indicator"></span>
+                    Check this custom checkbox 4
+                  </label>
+
+                </div>
+
+            </div>
+
         </div> <!-- /.demo-content -->
       </div> <!-- /.demo-row -->
       
@@ -229,83 +183,54 @@ $(':checkbox').on('toggle', function() {
         <div class="demo-title">
           <h3>Radio buttons</h3>
         </div>
-
         <div class="demo-content">
-          <p>
-            Styling radio buttons also requires using a JS plugin. We have tried making things easy so you won't have to spend a huge amount of time playing around with custom&nbsp;components.
-          </p>
-          <label class="radio">
-            <input type="radio" name="group1" value="1" data-toggle="radio">
-            Radio is off
-          </label>
-          <label class="radio">
-            <input type="radio" name="group1" value="2" data-toggle="radio" checked>
-            Radio is on
-          </label>
-          <label class="radio">
-            <input type="radio" name="group2" value="1" data-toggle="radio" disabled>
-            Radio is off
-          </label>
-          <label class="radio">
-            <input type="radio" name="group2" value="2" data-toggle="radio" disabled checked>
-            Radio is on
-          </label>
+            <div class="row">
+                <div class="col col-md-5">
+                  <label class="control radio">
+                    <input type="radio" id="radio1" name="radio">
+                    <span class="control-indicator"></span>
+                    Toggle this custom radio
+                  </label>
+                  <label class="control radio">
+                    <input type="radio" id="radio2" name="radio">
+                    <span class="control-indicator"></span>
+                    Or toggle this other custom radio
+                  </label>
+                   <label class="control radio">
+                    <input type="radio" id="radio2" name="radio">
+                    <span class="control-indicator"></span>
+                    Or toggle this other custom radio
+                  </label>
+                   <label class="control radio">
+                    <input type="radio" id="radio2" name="radio">
+                    <span class="control-indicator"></span>
+                    Or toggle this other custom radio
+                  </label>
+                </div>
 
-          <h6 class="ptl">The Data Attributes:</h6>
-<pre class="prettyprint">
-&lt;label class="radio"&gt;
-  &lt;input type="radio" name="group1" value="1" data-toggle="radio"&gt;
-  Radio is off
-&lt;/label&gt;
+            </div>
 
-&lt;label class="radio"&gt;
-  &lt;input type="radio" name="group1" value="2" data-toggle="radio" checked&gt;
-  Radio is on
-&lt;/label&gt;
-</pre>
-
-          <h6 class="ptl">The JS:</h6>
-<pre class="prettyprint">
-$(':radio').radio();
-</pre>
-
-          <div class="pvm">
-            <h6>Methods:</h6>
-          </div>
-          <p class="mbl">
-            <strong>.radio('check')</strong>
-            <br/>
-            sets the radio button state to <span class="text-info">checked</span>.
-          </p>
-          <p class="mbl">
-            <strong>.radio('uncheck')</strong>
-            <br/>
-            sets the radio state to <span class="text-info">unchecked</span>.
-          </p>
-<pre class="prettyprint">
-$(':radio').radio('check');
-</pre>
-
-          <div class="pbm ptl">
-            <h6>Events:</h6>
-          </div>
-          <p class="mbl">
-            <strong>.on('toggle')</strong>
-            <br/>
-            Fired when the radio button state changes between
-            <span class="text-info">checked</span> and
-            <span class="text-info">unchecked</span>.
-          </p>
-          <p class="mbl">
-            <strong>.on('change')</strong>
-            <br/>
-            Same as <span class="text-info">toggle</span> with just one difference &mdash; the event is fired for each radio button that gets a state change.
-          </p>
-<pre class="prettyprint">
-$(':radio').on('toggle', function() {
-  // Do something
-});
-</pre>
+            <div class="row">
+              <div class="col col-md-5">
+                <label class="control checkbox control-x">
+                  <input type="checkbox" checked>
+                  <span class="control-indicator"></span>
+                </label>
+                <label class="control checkbox control-dash">
+                  <input type="checkbox" checked>
+                  <span class="control-indicator"></span>
+                </label>
+                <label class="control radio control-x">
+                  <input type="radio" id="radioIcon1" name="radio-icon-x" checked>
+                  <span class="control-indicator"></span>
+                </label>
+                <label class="control radio control-dash">
+                  <input type="radio" id="radioIcon2" name="radio-icon-dash" checked>
+                  <span class="control-indicator"></span>
+                </label>
+              </div>
+            </div>
+        
         </div> <!-- /.demo-content -->
       </div> <!-- /.demo-row -->
     </div><!-- /.container -->
@@ -328,6 +253,16 @@ $(':radio').on('toggle', function() {
           <p class="mbl">
             Notice <code>dropdown-arrow</code>, which is needed when you want to add a small triangle that visually connects the clickable element with the dropdown menu.
           </p>
+          <label class="select">
+            <select>
+              <option selected>Open this select menu option are</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </label>
+
+          <hr>
 
           <select name="info" class="mbn">
             <optgroup label="Profile">
@@ -415,6 +350,8 @@ $(':radio').on('toggle', function() {
 					
 					<div class="row">
 						<div class="col-lg-5">
+              <label>My Label</label>
+              <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
 							<input type="text" value="" placeholder="Enter something" class="form-control" />
 						</div>
 					</div>
@@ -1366,8 +1303,8 @@ if ($slider3.length > 0) {
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-select.js"></script>
     <script src="js/bootstrap-switch.js"></script>
-    <script src="js/flatui-checkbox.js"></script>
-    <script src="js/flatui-radio.js"></script>
+    <!--<script src="js/flatui-checkbox.js"></script>
+    <script src="js/flatui-radio.js"></script> -->
     <script src="js/jquery.tagsinput.js"></script>
     <script src="js/jquery.placeholder.js"></script>
     <script src="js/typeahead.js"></script>

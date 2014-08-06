@@ -35,9 +35,9 @@ input[type="search"] {
 
 // Label
 label {
-  font-weight: @input-font-weight;
-  font-size: @component-font-size-base;
-  line-height: 2.4; // ~36px
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4; // ~36px
 }
 
 // Placeholder
@@ -71,14 +71,14 @@ label {
 // input[type="color"]
 
 .form-control {
-  border: 2px solid @gray-light;
+  border: 1px solid @gray-light;
   color: @brand-primary;
   font-family: @font-family-base;
   font-size: @input-font-size-base;
   line-height: @input-line-height-base;
   font-weight: @input-font-weight;
-  padding: 8px 12px;
-  height: 42px;
+  padding: 9px 9px;
+  height: 35px;
   -webkit-appearance: none;
   border-radius: @input-border-radius;
   .box-shadow(none);
@@ -106,25 +106,25 @@ label {
     border-color: transparent;
     
     &:hover {
-      border-color: @gray-light;
+      border-color: transparent;//@gray-light;
     }
     &:focus {
-      border-color: @brand-secondary;
+      border-color: transparent; //@brand-secondary;
     }
   }
 }
 
 // Form control sizing
 .input-sm {
-  .input-size(@input-height-small; 6px; 10px; @input-font-size-small; @input-line-height-small);
+  .input-size(@input-height-small; 6px; 6px; @input-font-size-small; @input-line-height-small);
 }
 
 .input-lg {
-  .input-size(@input-height-large; 10px; 15px; @input-font-size-large; @input-line-height-large);
+  .input-size(@input-height-large; 9px; 9px; @input-font-size-large; @input-line-height-large);
 }
 
 .input-hg {
-  .input-size(@input-height-huge; 10px; 16px; @input-font-size-huge; @input-line-height-huge);
+  .input-size(@input-height-huge; 9px; 12px; @input-font-size-huge; @input-line-height-huge);
 }
 
 // Form control feedback states
@@ -150,9 +150,10 @@ label {
 // below a form control. Use for general help, formatting, or instructional text.
 
 .help-block {
-  font-size: @component-font-size-base;
+  font-size: 12px;
+  font-weight: 300;
   margin-bottom: 5px;
-  color: inherit;
+  color: #777;
 }
 
 // Form groups
