@@ -118,6 +118,7 @@
             <button class="btn btn-success mrs">Success</button>
             <button class="btn btn-warning mrs">Warning</button>
             <button class="btn btn-inverse mrs">Inverse</button>
+            <button class="btn btn-outlined mrs">Outlined</button>
           </p>
 <pre class="prettyprint">
 &lt;button class="btn btn-default"&gt;Default&lt;/button&gt;
@@ -344,19 +345,36 @@ $(':radio').on('toggle', function() {
           <hr/>
           
           <div class="row">
-          	<div class="col-md-3">
+          	<div class="col-md-12">
 	          	<div class="dropdown">
 		          	<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown<span class="caret"></span></button>
-							  <span class="dropdown-arrow dropdown-arrow-inverse"></span>
-		            <ul class="dropdown-menu dropdown-inverse">
+							  <span class="dropdown-arrow"></span>
+		            <ul class="dropdown-menu arrow-right">
 		              <li><a href="#fakelink">Sub Menu Element</a></li>
+                  <li class="divider"></li>
 		              <li><a href="#fakelink">Sub Menu Element</a></li>
+                  <li class="divider"></li>
 		              <li><a href="#fakelink">Sub Menu Element</a></li>
 		            </ul>
 							</div>
           	</div>
           </div>
-          
+          <hr>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="dropdown dropup">
+                <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Dropup<span class="caret"></span></button>
+                
+                <ul class="dropdown-menu block-menu arrow-left">
+                  <li><a href="#fakelink">Sub Menu Element</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#fakelink">Sub Menu Element</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#fakelink">Sub Menu Element</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
           <div class="pvl">
 <pre class="prettyprint">

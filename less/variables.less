@@ -37,18 +37,27 @@
 @concrete:                  #95a5a6;
 @asbestos:                  #7f8c8d;
 
+@green: 					#4CD964;
+@blue: 						#007AFF;
+@lightblue: 				#75C7FD;
+@yellow: 					#FFCC00;
+@orange: 					#FF9500;
+@red: 						#FF3B30;
+@greyish: 					#8E8E93;	
+@blackish: 					#1F1F21;
+
 // Grays
 @gray:                      @concrete;
 @gray-light:                @silver;
 @inverse:                   white;
 
 // Brand colors
-@brand-primary:             @wet-asphalt;
-@brand-secondary:           @belize-hole; //@turquoise;
-@brand-success:             @emerald;
-@brand-warning:             @sun-flower;
-@brand-danger:              @alizarin;
-@brand-info:                @peter-river;
+@brand-primary:             @blackish;//@wet-asphalt;
+@brand-secondary:           @blue;//@belize-hole; //@turquoise;
+@brand-success:             @green;//@emerald;
+@brand-warning:             @yellow;//@sun-flower;
+@brand-danger:              @red;//@alizarin;
+@brand-info:                @lightblue;//@peter-river;
 
 
 //== Scaffolding
@@ -59,18 +68,18 @@
 @text-color:                @brand-primary;
 
 //** Global textual link color.
-@link-color:                @belize-hole;//@green-sea;
-@link-hover-color:          @peter-river;//@turquoise;
+@link-color:                @blue;//@belize-hole;//@green-sea;
+@link-hover-color:          @lightblue;//@peter-river;//@turquoise;
 
 
 //== Typography
 //
 //## Font, line-height for body text, headings, and more.
 
-@font-family-base:          "Lato", Helvetica, Arial, sans-serif;
-@font-family-demo:          "Lato", Helvetica, Arial, sans-serif;
+@font-family-base:          "Helvetica Neue", "Lato", Helvetica, Arial, sans-serif;
+@font-family-demo:          "Helvetica Neue", "Lato", Helvetica, Arial, sans-serif;
 @font-family-monospace:     Monaco, Menlo, Consolas, "Courier New", monospace;
-@font-size-base:            18px;
+@font-size-base:            15px;
 
 @local-font-path:               "../fonts/lato/";
 @local-font-name:               "lato-regular";
@@ -86,18 +95,18 @@
 @local-font-name-bold-italic:   "lato-bolditalic";
 @local-font-svg-id-bold-italic: "latobold-italic";
 
-@font-size-h1:              floor(@font-size-base * 3.444); // ~62px
-@font-size-h2:              ceil(@font-size-base * 2.889); // ~52px
-@font-size-h3:              ceil(@font-size-base * 2.222); // ~40px
-@font-size-h4:              ceil(@font-size-base * 1.611); // ~29px
-@font-size-h5:              floor(@font-size-base * 1.556); // ~28px
-@font-size-h6:              ceil(@font-size-base * 1.333); // ~24px
+@font-size-h1:              floor(@font-size-base * 2.6); // 
+@font-size-h2:              ceil(@font-size-base * 2.15); // 
+@font-size-h3:              ceil(@font-size-base * 1.7); // 
+@font-size-h4:              ceil(@font-size-base * 1.25); // 
+@font-size-h5:              floor(@font-size-base * 1.1); // 
+@font-size-h6:              ceil(@font-size-base * 0.85); // 
 
 @line-height-base:          1.72222; // 31/18
 @line-height-computed:      floor(@font-size-base * @line-height-base); // ~31px
 
 @headings-font-family:      inherit;
-@headings-font-weight:      700;
+@headings-font-weight:      400;
 @headings-line-height:      1.1;
 @headings-color:            inherit;
 
@@ -121,12 +130,12 @@
 //## Define common padding and border radius sizes and more.
 
 //** Default font-size in components
-@component-font-size-base:  ceil(@font-size-base * 0.833); // ~15px
+@component-font-size-base:  ceil(@font-size-base * 1.0); // ~15px
 
 // Border-radius
-@border-radius-base:        2px;//4px;
-@border-radius-large:       4px;//6px;
-@border-radius-small:       1px;//3px;
+@border-radius-base:        4px;
+@border-radius-large:       6px;
+@border-radius-small:       3px;
 
 
 //== Buttons
@@ -234,7 +243,7 @@
 
 @input-border-radius:       @border-radius-large;
 
-@input-font-weight:			300;
+@input-font-weight:			400;
 
 @legend-color:              inherit;
 
@@ -260,7 +269,7 @@
 // Basics of a navbar
 @zindex-navbar:              1000;
 @zindex-navbar-fixed:        1030;
-@navbar-height-base:         53px;
+@navbar-height-base:         44px;
 @navbar-height-large:        76px;
 @navbar-input-line-height:   1.4; // ~21px
 @navbar-margin-bottom:       @line-height-computed;
@@ -347,9 +356,9 @@
 //
 //##
 
-@dropdown-background:        mix(@inverse, @brand-primary, 94%);
+@dropdown-background:        #fff;//mix(@inverse, @brand-primary, 94%);
 
-
+@dropdown-background-active: #d9d9d9;
 //== Iconbar
 //
 //##
